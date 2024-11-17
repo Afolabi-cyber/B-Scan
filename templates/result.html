@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Images</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section class="result-section">
+        <div class="result-container">
+            <h1>Uploaded and Segmented Images</h1>
+
+            <!-- Container for both images side by side -->
+            <div class="images">
+                <!-- Original Image -->
+                <div class="image">
+                    <h2>Uploaded Image</h2>
+                    <img src="{{ uploaded_image_url }}" alt="Uploaded Image" width="300">
+                </div>
+
+                <!-- Segmented Image -->
+                <div class="image">
+                    <h2>Segmented Image</h2>
+                    <img src="{{ segmented_image_url }}" alt="Segmented Image" width="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BACK Button -->
+    <a href="/" class="back-button">BACK</a>
+
+    <style>
+        /* BACK button styling */
+        .back-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+    </style>
+</body>
+</html>

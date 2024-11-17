@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BScan - Brain Tumor Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>BScan - Brain Tumor Detection</h1>
+            <p>Upload an MRI scan to detect and highlight brain tumors. Get an AI-powered analysis in seconds.</p>
+            <!-- Upload Form -->
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="image" class="custom-file-upload">Choose MRI Scan</label>
+                <input type="file" name="file" id="image" accept="image/*" required>
+                <button type="submit">Analyze MRI Scan</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
