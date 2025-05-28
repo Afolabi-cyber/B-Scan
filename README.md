@@ -42,5 +42,5 @@ With a focus on accessibility and user-friendliness, BScan bridges the gap betwe
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/bscan-brain-tumor-detection.git
+   git clone https://github.com/Afolabi-cyber/bscan-brain-tumor-detection.git
    cd bscan-brain-tumor-detection
